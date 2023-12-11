@@ -8185,7 +8185,9 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: #CC5500;
+  /* color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important; */
+  /* [BH] changed to orange from blue, have to see what else is using this text besides the header label */
 }
 
 .text-secondary {
