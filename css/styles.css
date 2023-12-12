@@ -11563,7 +11563,7 @@ html {
 
 .bg-gradient-home {
   background: #CC5500;
-  background: linear-gradient(180deg, #CC5500 0%, #FFFFFF 20%)
+  background: linear-gradient(180deg, #CC5500 0%, #FFFFFF 15%)
 }
 
 .bg-gradient-resume {
