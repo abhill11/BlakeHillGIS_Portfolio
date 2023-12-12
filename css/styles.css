@@ -11561,6 +11561,26 @@ html {
   background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
 }
 
+.bg-gradient-home {
+  background: #CC5500;
+  background: linear-gradient(180deg, #CC5500 0%, #FFFFFF 20%)
+}
+
+.bg-gradient-resume {
+  background: #1e30f3 ;
+  background: linear-gradient(180deg, #1e30f3 0%, #FFFFFF 15%)
+}
+
+.bg-gradient-projects {
+  background: #198754 ;
+  background: linear-gradient(180deg, #198754 0%, #FFFFFF 20%)
+}
+
+.bg-gradient-contact {
+  background: #6610f2;
+  background: linear-gradient(180deg, #6610f2 0%, #ffffff 25%)
+}
+
 .text-gradient {
   background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
   -webkit-background-clip: text;
