@@ -73,8 +73,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #1e30f3;
-  --bs-link-hover-color: #1826c2;
+  --bs-link-color: #e5b900;
+  --bs-link-hover-color: #e58600;
   --bs-code-color: #e21e80;
   --bs-highlight-bg: #fff3cd;
 }
@@ -2850,19 +2850,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #1e30f3;
-  --bs-btn-border-color: #1e30f3;
+  --bs-btn-bg: #e58600;
+  --bs-btn-border-color: #e58600;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #1a29cf;
-  --bs-btn-hover-border-color: #1826c2;
+  --bs-btn-hover-bg: #d87e00;
+  --bs-btn-hover-border-color: #e58600;
   --bs-btn-focus-shadow-rgb: 64, 79, 245;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #1826c2;
-  --bs-btn-active-border-color: #1724b6;
+  --bs-btn-active-bg: #d87e00;
+  --bs-btn-active-border-color: #d87e00;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #1e30f3;
-  --bs-btn-disabled-border-color: #1e30f3;
+  --bs-btn-disabled-bg: #ddd;
+  --bs-btn-disabled-border-color: #ddd;
 }
 
 .btn-secondary {
@@ -3703,7 +3703,7 @@ textarea.form-control-lg {
 
 .nav-pills {
   --bs-nav-pills-border-radius: 0.375rem;
-  --bs-nav-pills-link-active-color: #fff;
+  --bs-nav-pills-link-active-color: #e58600;
   --bs-nav-pills-link-active-bg: #1e30f3;
 }
 .nav-pills .nav-link {
@@ -4161,9 +4161,9 @@ textarea.form-control-lg {
 
 .navbar-dark {
   --bs-navbar-color: rgba(255, 255, 255, 0.55);
-  --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
-  --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
-  --bs-navbar-active-color: #fff;
+  --bs-navbar-hover-color: rgba(229, 134, 0, 0.75);
+  --bs-navbar-disabled-color: rgba(127, 127, 127, 0.25);
+  --bs-navbar-active-color: #e58600;
   --bs-navbar-brand-color: #fff;
   --bs-navbar-brand-hover-color: #fff;
   --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
@@ -4185,7 +4185,7 @@ textarea.form-control-lg {
   --bs-card-cap-color: ;
   --bs-card-height: ;
   --bs-card-color: ;
-  --bs-card-bg: #fff;
+  --bs-card-bg: #ddd;
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
@@ -11673,7 +11673,7 @@ html {
 
 .bg-gradient-home {
   background: #CC5500;
-  background: linear-gradient(180deg, #CC5500 0%, #FFFFFF 15%)
+  background: linear-gradient(180deg, #CC5500 0%, #FFFFFF 30%)
 }
 
 .bg-gradient-resume {
@@ -11683,12 +11683,12 @@ html {
 
 .bg-gradient-projects {
   background: #198754 ;
-  background: linear-gradient(180deg, #198754 0%, #FFFFFF 15%)
+  background: linear-gradient(180deg, #198754 0%, #FFFFFF 5%)
 }
 
 .bg-gradient-contact {
   background: #6610f2;
-  background: linear-gradient(180deg, #6610f2 0%, #ffffff 25%)
+  background: linear-gradient(180deg, #6610f2 0%, #ffffff 30%)
 }
 
 .text-gradient {
