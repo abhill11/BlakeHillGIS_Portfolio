@@ -11701,6 +11701,11 @@ html {
   background: linear-gradient(180deg, #198754 0%, #FFFFFF 5%)
 }
 
+.bg-gradient-portfolio {
+  background: #198754 ;
+  background: linear-gradient(180deg, #198754 0%, #FFFFFF 10%)
+}
+
 .bg-gradient-contact {
   background: #6610f2;
   background: linear-gradient(180deg, #6610f2 0%, #ffffff 30%)

@@ -18,7 +18,7 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100">
-        <main class="bg-gradient-projects flex-shrink-0">
+        <main class="bg-gradient-portfolio flex-shrink-0">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3">
                 <div class="container px-5">
@@ -28,566 +28,308 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                             <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
                             <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
             <!-- Projects Section-->
-            <section class="py-5">
-                <div class="container px-5 mb-5">
+            
+        <!-- Portfolio Grid-->
+        <section class="py-5" id="portfolio">
+            <div class="container px-5 mb-5">
                     <div class="text-center mb-5">
                         <h1 class="display-5 fw-bolder mb-0">Projects</h1>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <!-- Project Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Web Mapping</h2>
-                                            <p>Web-based maps using QGIS, Leaflet, and Mapbox</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="assets/img/portfolio/05_thumb.png" alt="" />
-                                        </a>
+                </div>
+                <div class="row">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal0">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                     </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/00_thumb.png" alt="" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">30 Day Map Challenge</div>
+                                    <div class="portfolio-caption-subheading text-muted">2023<br><br></div>
                                 </div>
                             </div>
-                            <!-- Project Card 2-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Python</h2>
-                                            <p>Automated geoprocessing tools using Python and the arcpy library</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="assets/img/portfolio/04_thumb.png" alt="" />
-                                        </a>
-                                    </div>
+                        </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
+                                <img class="img-fluid" src="assets/img/portfolio/01_thumb.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">ArcMap & ArcGIS Pro</div>
+                                <div class="portfolio-caption-subheading text-muted">ESRI ArcGIS<br><br></div>
                             </div>
-                            <!-- Project Card 3-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Inverted Polygon Symbology</h2>
-                                            <p>Tutorial on applying and using an inverted polygon symbology in QGIS</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="assets/img/portfolio/03_thumb.jpg" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 4-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Pansharpening</h2>
-                                            <p>Using ERDAS Imagine and Landsar imagery</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="assets/img/portfolio/02_thumb3.jpg" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ### Project Card 5 ###
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        ### modal image and open link area ###
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="https://dummyimage.com/300x400/343a40/6c757d" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- ### Project Card 6###
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        ### modal image and open link area ###
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="https://dummyimage.com/300x400/343a40/6c757d" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- Project Card 7-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Layer Blending</h2>
-                                            <p>Layer blending symbology in QGIS for visual analysis</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="assets/img/portfolio/07_thumb.png" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 8-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Digital Elevation Model</h2>
-                                            <p>DEM produced in QGIS</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="assets/img/portfolio/08_thumb.png" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 9-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Unsupervised Classification</h2>
-                                            <p>Remotely-sensed image analysis</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal9">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="assets/img/portfolio/Pittsburgh_classified.jpg" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 10-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Multi-criterion Evaluation</h2>
-                                            <p>to find suitable locations</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal10">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="assets/img/portfolio/10_thumb.png" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                             <!-- Project Card 11-->
-                             <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Network Analyst extension</h2>
-                                            <p>ArcMap Desktop</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal11">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="assets/img/portfolio/01_thumb.jpg" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 12-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Tree canopy - LiDAR</h2>
-                                            <p>Canopy measurments from LiDAR point cloud</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal12">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="assets/img/portfolio/12_thumb.png" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 13-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Watershed delineation</h2>
-                                            <p>Flow Accumulator in ArcGIS</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal13">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="assets/img/portfolio/13_thumb.png" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 14-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Model Builder</h2>
-                                            <p>Customizing geoprocessing tools and iterative processes in ArcGIS</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal14">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="assets/img/portfolio/14_thumb.png" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 15-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Agent Analyst Extension</h2>
-                                            <p>in ArcMap Desktop</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal13">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="assets/img/portfolio/15_thumb.png" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 16-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal16">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="assets/img/portfolio/13_thumb.png" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 17-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal17">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="https://dummyimage.com/300x400/343a40/6c757d" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 18-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal18">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="https://dummyimage.com/300x400/343a40/6c757d" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 19-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal19">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="https://dummyimage.com/300x400/343a40/6c757d" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 20-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal20">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="https://dummyimage.com/300x400/343a40/6c757d" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 21-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal21">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="https://dummyimage.com/300x400/343a40/6c757d" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 22-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal22">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="https://dummyimage.com/300x400/343a40/6c757d" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 23-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal23">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="https://dummyimage.com/300x400/343a40/6c757d" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 24-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal24">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="https://dummyimage.com/300x400/343a40/6c757d" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 25-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal25">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="https://dummyimage.com/300x400/343a40/6c757d" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 26-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal26">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="https://dummyimage.com/300x400/343a40/6c757d" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 27-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal27">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="https://dummyimage.com/300x400/343a40/6c757d" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 28-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal28">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="https://dummyimage.com/300x400/343a40/6c757d" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 29-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal29">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="https://dummyimage.com/300x400/343a40/6c757d" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 30-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <!-- modal image and open link area -->
-                                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal30">
-                                            <div class="portfolio-hover">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-projectcard" src="https://dummyimage.com/300x400/343a40/6c757d" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Individual Project Card  End -->
                         </div>
                     </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/02_thumb3.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Pansharpening</div>
+                                <div class="portfolio-caption-subheading text-muted">Landsat imagery in ERDAS Imagine<br><br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/03_thumb.JPG" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Inverted Polygon</div>
+                                <div class="portfolio-caption-subheading text-muted">Tutorial on inverted polygon symbology in QGIS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/04_thumb.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Python</div>
+                                <div class="portfolio-caption-subheading text-muted">Automated geoprocessing tools using Python and the arcpy library<br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/05_thumb.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Web mapping</div>
+                                <div class="portfolio-caption-subheading text-muted">HTML, Java, CSS, Python for Web-based maps using Leaflet and Mapbox libraries<br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/06_thumb.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Nighttime Lights</div>
+                                <div class="portfolio-caption-subheading text-muted">Remote sensing with Nighttime light satellite imagery</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/07_thumb.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Layer Blending</div>
+                                <div class="portfolio-caption-subheading text-muted">Layer blending symbology in QGIS for visual analysis<br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/08_thumb.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Digital Elevation Model</div>
+                                <div class="portfolio-caption-subheading text-muted">DEM produced in QGIS<br><br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/Pittsburgh_classified.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Unsupervised Classification</div>
+                                <div class="portfolio-caption-subheading text-muted">Remotely-sensed image analysis</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal10">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/10_thumb.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Multi-criterion Evaluation</div>
+                                <div class="portfolio-caption-subheading text-muted">MCE of suitable locations</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal11">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/01_thumb.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Network Analyst extension</div>
+                                <div class="portfolio-caption-subheading text-muted"> in ArcGIS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal12">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/12_thumb.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Tree canopy - LiDAR</div>
+                                <div class="portfolio-caption-subheading text-muted">Canopy measurments from LiDAR point cloud<br><br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal13">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/13_thumb.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Watershed delineation</div>
+                                <div class="portfolio-caption-subheading text-muted">Flow Accumulator in ArcGIS<br><br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal14">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/14_thumb.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Model Builder</div>
+                                <div class="portfolio-caption-subheading text-muted">Customizing geoprocessing tools and iterative processes in ArcGIS<br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal15">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/15_thumb.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Agent Analyst</div>
+                                <div class="portfolio-caption-subheading text-muted">extension in ArcMap<br><br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal16">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/16_thumb.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Bathymetry</div>
+                                <div class="portfolio-caption-subheading text-muted">Apalachicola Bay, Florida<br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal17">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/17_thumb.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Georeferencing</div>
+                                <div class="portfolio-caption-subheading text-muted">imagery in ArcGIS<br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal18">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/18_thumb.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Density Mapping</div>
+                                <div class="portfolio-caption-subheading text-muted">Kernel density in ArcGIS<br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal19">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/19_thumb.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">ESRI Training</div>
+                                <div class="portfolio-caption-subheading text-muted">MOOCs and Instructor-lead Trainings<br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----- -->
                 </div>
-            </section>
+            </div>
+        </section>
         </main>
         <!-- Footer-->
         <footer class="bg-white py-4 mt-auto">
