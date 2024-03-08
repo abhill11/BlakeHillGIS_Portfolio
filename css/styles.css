@@ -34,16 +34,20 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #1e30f3;
-  --bs-secondary: #e21e80;
+  --bs-primary: #CC5500;
+  /* --bs-primary: #1e30f3; */
+  /* --bs-secondary: #e21e80; */
+  --bs-secondary: #e5b900;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 30, 48, 243;
-  --bs-secondary-rgb: 226, 30, 128;
+  --bs-primary-rgb: 204, 85, 0;
+  /* --bs-primary-rgb: 30, 48, 243; */
+  /* --bs-secondary-rgb: 226, 30, 128; */
+  --bs-secondary-rgb: 229, 185, 0;
   --bs-education-rgb: 255, 87, 51;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -8305,8 +8309,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: #CC5500;
-  /* color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important; */
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
   /* [BH] changed to orange from blue, have to see what else is using this text besides the header label */
 }
 
@@ -11693,22 +11696,22 @@ html {
 
 .bg-gradient-resume {
   background: #1e30f3 ;
-  background: linear-gradient(180deg, #1e30f3 0%, #FFFFFF 15%)
+  background: linear-gradient(180deg, #1e30f3 0%, #edebeb 15%)
 }
 
 .bg-gradient-projects {
   background: #198754 ;
-  background: linear-gradient(180deg, #198754 0%, #FFFFFF 5%)
+  background: linear-gradient(180deg, #198754 0%, #edebeb 5%)
 }
 
 .bg-gradient-portfolio {
   background: #198754 ;
-  background: linear-gradient(180deg, #198754 0%, #FFFFFF 10%)
+  background: linear-gradient(180deg, #198754 0%, #edebeb 10%)
 }
 
 .bg-gradient-contact {
   background: #6610f2;
-  background: linear-gradient(180deg, #6610f2 0%, #ffffff 30%)
+  background: linear-gradient(180deg, #6610f2 0%, #edebeb 30%)
 }
 
 .text-gradient {
