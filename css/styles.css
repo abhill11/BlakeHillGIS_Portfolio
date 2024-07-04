@@ -44,6 +44,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-grey: #e5e5e5;
   --bs-primary-rgb: 204, 85, 0;
   /* --bs-primary-rgb: 30, 48, 243; */
   /* --bs-secondary-rgb: 226, 30, 128; */
@@ -8444,6 +8445,11 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-grey {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-grey-rgb), var(--bs-bg-opacity)) !important;
+}
+
 .bg-black {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
@@ -11696,22 +11702,23 @@ html {
 
 .bg-gradient-resume {
   background: #1e30f3 ;
-  background: linear-gradient(180deg, #1e30f3 0%, #edebeb 15%)
+  background: linear-gradient(180deg, #1e30f3 0%, #e5e5e5 15%)
 }
 
 .bg-gradient-projects {
   background: #198754 ;
-  background: linear-gradient(180deg, #198754 0%, #edebeb 5%)
+  background: linear-gradient(180deg, #198754 0%, #e5e5e5 5%)
 }
 
 .bg-gradient-portfolio {
   background: #198754 ;
-  background: linear-gradient(180deg, #198754 0%, #edebeb 10%)
+  background: linear-gradient(180deg, #198754 0%, #e5e5e5 10%)
 }
 
 .bg-gradient-contact {
   background: #6610f2;
-  background: linear-gradient(180deg, #6610f2 0%, #edebeb 30%)
+  /* background: linear-gradient(180deg, #6610f2 0%, #edebeb 30%) */
+  background: linear-gradient(180deg, #6610f2 0%, #e5e5e5 30%)
 }
 
 .text-gradient {
