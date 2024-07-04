@@ -6819,6 +6819,11 @@ textarea.form-control-lg {
   background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
 }
 
+.text-bg-grey {
+  color: #000 !important;
+  background-color: RGBA(229, 229, 229, var(--bs-bg-opacity, 1)) !important;
+}
+
 .link-primary {
   color: #1e30f3 !important;
 }
@@ -11697,7 +11702,8 @@ html {
 
 .bg-gradient-home {
   background: #CC5500;
-  background: linear-gradient(180deg, #CC5500 0%, #FFFFFF 30%)
+  background: linear-gradient(180deg, #CC5500 0%, #d69a6b 30%)
+  /* was FFFFFF or eeeeee*/
 }
 
 .bg-gradient-resume {
