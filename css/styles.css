@@ -11702,8 +11702,8 @@ html {
 
 .bg-gradient-home {
   background: #CC5500;
-  background: linear-gradient(180deg, #CC5500 0%, #d69a6b 30%)
-  /* was FFFFFF or eeeeee*/
+  background: linear-gradient(180deg, #CC5500 0%, #eeeeee 30%)
+  /* was FFFFFF or d69a6b*/
 }
 
 .bg-gradient-resume {
